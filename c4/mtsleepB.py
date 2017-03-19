@@ -26,11 +26,11 @@ def main():
     for i in nloops:
         thread.start_new_thread(loop, (i, loops[i], locks[i]))
 
-        for i in nloops:
-            while locks[i].locked():
-                pass
+    for i in nloops:
+        while locks[i].locked():
+            pass
 
-        print 'all DONE at:', ctime()
+    print 'all DONE at:', ctime()
 
 if __name__ == '__main__':
     main()
