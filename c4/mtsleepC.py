@@ -7,6 +7,7 @@ loops = [4, 2]
 
 
 def loop(nloop, nsec):
+    """docstring"""
     print 'start loop', nloop, 'at:', ctime()
     sleep(nsec)
     print 'loop', nloop, 'done at:', ctime()
